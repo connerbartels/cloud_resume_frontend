@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/visitor-counter.js"></script>
+    <script>
+        visitorCounter();
+    </script>
+    <title>Conner Bartels - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .resume {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .job-title, .institution {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 18px;
+        }
+
+        .company, .degree {
+            font-style: italic;
+            color: #3498db;
+        }
+
+        .date-location {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: -15px;
+        }
+
+        .skills-interests {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .skills-section {
+            margin-bottom: 15px;
+        }
+
+        .skills-content, .interests-content {
+            color: #555;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .resume {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .resume {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="header">
+            Visitor #: <span id="visitor-counter"></span>
+            <h1>CONNER BARTELS</h1>
+            <div class="contact-info">
+                Los Angeles, CA | (925) 854-8484<br>
+                <a href="mailto:cbjr19@gmail.com">cbjr19@gmail.com</a> | 
+                <a href="https://www.linkedin.com/in/conner-bartels-272464253" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>EDUCATION</h2>
+            <div class="education-item">
+                <div class="institution">Loyola Marymount University</div>
+                <div class="degree">Bachelor of Business Administration - Information Systems & Business Analytics, Entrepreneurship</div>
+                <div class="date-location">Expected Graduation: May 2025 | GPA: 3.42</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            <div class="experience-item">
+                <div class="job-title">Financial Literacy Administrator and Teacher</div>
+                <div class="company">SAVE IT FORWARD INITIATIVE</div>
+                <div class="date-location">May 2024 - Present | Los Angeles, CA</div>
+                <ul>
+                    <li>Led a financial literacy class for high school students, covering essential topics such as budgeting, credit building, loans, business creation, investment strategies, and long-term financial planning, therefore demonstrating advanced communication skills.</li>
+                    <li>Developed and implemented engaging curriculum tailored to various age groups, ensuring comprehensive understanding of financial principles and advanced analytical, quantitative, and interpretative skills.</li>
+                    <li>Oversaw administrative tasks for the startup, including addressing operational issues, working with sponsors to raise money, and ensuring smooth execution of the program, showcasing the ability to thrive in a dynamic, fast-paced, collaborative work environment.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Financial Planning & Analysis Intern</div>
+                <div class="company">CB ENTERPRISES</div>
+                <div class="date-location">May 2023 - August 2023 | Danville, CA</div>
+                <ul>
+                    <li>Conducted in-depth analysis on monthly revenue and expense data for various food contracts, identifying cost-saving opportunities that resulted in a reduction in distribution cost.</li>
+                    <li>Assisted in budgeting and forecasting processes, projecting annual revenues and expenditures, ensuring alignment with state contract requirements and financial objectives.</li>
+                    <li>Developed detailed financial reports on product margins, inventory levels, and operational efficiency, providing insights that supported strategic decision-making for large-scale food supply contracts.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Digital Marketing Specialist</div>
+                <div class="company">NXTUP</div>
+                <div class="date-location">March 2021 - January 2023 | Danville, CA</div>
+                <ul>
+                    <li>Created my own startup by utilizing advanced video editing software to create engaging, professional-grade videos, ensuring client satisfaction and timely delivery, highlighting strong intellectual curiosity and problem-solving skills.</li>
+                    <li>Collaborated with the NFL agency, Choice1Management, to produce high-quality video content, enhancing their marketing and promotional efforts and edited highlight reels and mixtapes for some of the largest high school basketball prospects, showcasing their talents to scouts and recruiters.</li>
+                    <li>Managed commission-based projects by providing custom video editing services for clients seeking personalized basketball mixtapes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>LEADERSHIP ACTIVITIES</h2>
+            <div class="experience-item">
+                <div class="job-title">Cabinet Member</div>
+                <div class="company">DELTA SIGMA PI</div>
+                <div class="date-location">September 2022 - December 2022 | Los Angeles, CA</div>
+                <ul>
+                    <li>Organized and executed events, from professional workshops to social gatherings, gaining practical experience in logistics and coordination within a collaborative environment.</li>
+                    <li>Engaged closely with alumni and industry professionals, to assist my peers in getting job opportunities post-graduation.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Eagle Scout</div>
+                <div class="company">BOY SCOUTS OF AMERICA</div>
+                <div class="date-location">January 2014 - May 2020 | Danville, CA</div>
+                <ul>
+                    <li>Led a team of volunteers to plan, organize, and execute a community service project, demonstrating strong leadership, problem-solving, and logistical planning skills.</li>
+                    <li>Achieved the highest rank in Scouting, reflecting a long-term dedication to personal development, teamwork, and adherence to ethical standards.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>SKILLS & INTERESTS</h2>
+            <div class="skills-interests">
+                <div class="skills-section">
+                    <strong>Skills:</strong>
+                    <span class="skills-content">MySQL Workbench, Python, Excel Certified, Microsoft Powerpoint, Microsoft Access, Accounting, Marketing</span>
+                </div>
+                <div class="skills-section">
+                    <strong>Interests:</strong>
+                    <span class="interests-content">Golf, Basketball, Formula 1, Biking, Philosophy, Chess</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
